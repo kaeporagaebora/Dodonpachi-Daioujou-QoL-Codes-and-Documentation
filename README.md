@@ -76,4 +76,4 @@ Not recommended, just use the "Aquire Hyper Medals Instantly" code.
 Level 5 hyper activation regardless of the number of hypers in stock.
 
 ### Remove Hyper Activation Slowdown
-The game has intentional slowdown for about 20 frames. This code removes that. Makes hyper activation feel smoother but it will throw off your muscle memory timings for each stage.
+The game has intentional slowdown for about 20 frames when activating hyper. This code removes that. Makes hyper activation feel smoother but it will throw off your muscle memory timings for each stage.
