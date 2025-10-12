@@ -244,8 +244,10 @@ p1_hyper_meter_reserves_count  = $81B6e0               ; Tracks how many hyper m
 285A72: 33FC 0023 0081 B646      move.w     #$23, (hyper_rank).l				            ; Prevent hyper rank from going over 0x23
 
 ; Determine what the chain timer is when shooting an enemy
-; Loop 1 : A0 = 287DF0, D2 = 0000 (Chain timer = 0x38)
-; Loop 2 : A0 = 287DF0, D2 = 0002 (Chain timer = 0x5A)
+; Chain timer is based on the maximum capacity of the combo gauge
+; When the capacity is higher, the meter takes longer to drain once it fills up
+; Loop 1 : A0 = 287DF0, D2 = 0000 (Combo gauge capacity = 0x38)
+; Loop 2 : A0 = 287DF0, D2 = 0002 (Combo gauge capacity = 0x5A)
 28615E: 3439 0081 3098           move.w     (loop_flag).l, D2
 286164: D442                     add.w      D2, D2                                          ; D2 = D2 * 2 (used as table index)
 286166: 41F9 0028 7DF0           lea        $287df0.l, A0                                   ; Load chain timer table base address into A0
@@ -455,4 +457,5 @@ p1_hyper_meter_reserves_count  = $81B6e0               ; Tracks how many hyper m
 287BA2: 0C79 095F 0081 B64A      cmp.w      #$95f, (p1_hyper_meter).l			  
 287BAA: 6508                     bcs        $287bb4	                                        ; If hyper meter is not full, skip next instruction
 287BAC: 33FC 095E 0081 B64A      move.w     #$95e, (p1_hyper_meter).l			            ; If hyper meter full after death deduct 1 from it
+
 287BB4: 4E75                     rts
