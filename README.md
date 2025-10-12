@@ -1,5 +1,5 @@
 # Dodonpachi-Daioujou-QoL-Codes-and-Documentation
-Quality of life and cosmetic cheat codes for Daioujou Black Label, as well as an in-progress disassembly
+Quality of life and cosmetic cheat codes for Daioujou Black Label, as well as an in-progress disassembly, codename: Red Label
 
 There are a few black label romsets in existence, these codes are made for:
 
