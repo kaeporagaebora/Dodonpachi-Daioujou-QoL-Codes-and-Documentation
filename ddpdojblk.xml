@@ -1,0 +1,419 @@
+<mamecheat version="1">
+
+  <cheat desc="Loop 2 Chain Timer for Loop 1">
+    <!-- Table Value Change
+	  Replaces:
+	    287DF0: 0038
+		
+	  With:
+	    287DF0: 005A
+		
+      Chain timing is based on the max capacity of the combo gauge
+      When the capacity is higher, the meter takes longer to drain once it fills up
+	-->
+    <script state="run">
+      <action>maincpu.mw@287DF0=005A</action>  
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original value -->
+	  <action>maincpu.mw@287DF0=0038</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Smaller Hitbox">
+	<!-- Memory Value Freeze
+	  8103F6: 0050 0050 
+	  
+	  Much smaller hitbox
+	-->
+    <script state="run">
+      <action>:maincpu.pw@0x8103F6=0x0050</action>
+	  <action>:maincpu.pw@0x8103F8=0x0050</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Aquire Hyper Medals Instantly">
+    <!-- Code Change
+	  Replaces:
+	    27EFCA: btst  #$c, D1		
+		27EFCE: beq  $27efec
+		
+	  With:
+		27EFCA: jmp  $27efd2
+		27EFD0: nop
+		
+	  After filling hyper meter, player will instantly get it instead of having to pick it up
+	-->
+    <script state="run">
+      <action>maincpu.mw@27EFCA=4EF9</action>  
+	  <action>maincpu.mw@27EFCC=0027</action> 
+	  <action>maincpu.mw@27EFCE=EFD2</action> 
+	  <action>maincpu.mw@27EFD0=4E71</action> 
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instructions -->
+	  <action>maincpu.mw@27EFCA=0801</action>
+	  <action>maincpu.mw@27EFCC=000C</action> 
+	  <action>maincpu.mw@27EFCE=6700</action> 
+	  <action>maincpu.mw@27EFD0=001C</action> 
+    </script>
+  </cheat>
+
+  <cheat desc="Keep Combo Gauge High While Lasering Large Enemy">
+    <!-- Code Change
+	  Replaces:
+	    2869E0: cmpi.w  #$a, $81b5c0.l  	; When not in hyper
+		2869EA: move.w  #$a, $81b5c0.l   	; When not in hyper
+		2869F4: cmpi.w  #$19, $81b5c0.l     ; During hyper mode
+		2869FE: move.w  #$19, $81b5c0.l     ; During hyper mode
+		
+	  With:
+	    2869E0: cmpi.w  #$38, $81b5c0.l     ; When not in hyper
+		2869EA: move.w  #$38, $81b5c0.l   	; When not in hyper
+		2869F4: cmpi.w  #$38, $81b5c0.l  	; During hyper mode
+		2869FE: move.w  #$38, $81b5c0.l 	; During hyper mode
+	-->
+    <script state="run">
+	  <action>maincpu.mw@2869E2=0038</action>  
+	  <action>maincpu.mw@2869EC=0038</action> 
+	  <action>maincpu.mw@2869F6=0038</action> 
+	  <action>maincpu.mw@286A00=0038</action> 
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instructions -->
+	  <action>maincpu.mw@2869E2=000A</action>  
+	  <action>maincpu.mw@2869EC=000A</action> 
+	  <action>maincpu.mw@2869F6=0019</action> 
+	  <action>maincpu.mw@286A00=0019</action> 
+    </script>
+  </cheat>
+
+  <cheat desc="Shot and Laser Power Level Max">
+	<!-- Memory Value Freeze
+	  810406: 0008 0008
+	-->
+    <script state="run">
+      <action>:maincpu.pw@0x810406=0x0008</action>
+	  <action>:maincpu.pw@0x810408=0x0008</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Increase Combo Gauge Increment Value">
+    <!-- Code Change
+	  Replaces:
+	    2862D4: move.w  (A0,D2.w), $81b5e0.l
+		
+	  With:
+	    2862D4: move.w  #$5a, 81b5e0.l  
+
+	  Enemies that cannot be multi-hit would be hard to combo from. This makes it easier
+	  Also forces the increment value to be the same regardless of ship type
+	-->
+    <script state="run">
+      <action>maincpu.mw@2862D4=33FC</action>  
+	  <action>maincpu.mw@2862D6=005A</action>
+	  <action>maincpu.mw@2862D8=0081</action>
+	  <action>maincpu.mw@2862DA=B5E0</action>
+    </script>
+	
+    <script state="off">
+      <action>maincpu.mw@2862D4=33F0</action>  
+	  <action>maincpu.mw@2862D6=2000</action>
+	  <action>maincpu.mw@2862D8=0081</action>
+	  <action>maincpu.mw@2862DA=B5E0</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Longer Hyper I-frames">
+  	<!-- Code Change
+	  Replaces:
+	    25325E: move.b  #$50, D0	    ; When not in a boss fight
+	    25326C: move.b  #$78, D0  	    ; During boss fight
+		  
+	  With:
+	    25325E: move.b  #$D0, D0		; When not in a boss fight
+	    25326C  move.b  #$D0, D0  	    ; During boss fight
+	  -->
+    <script state="run">
+	  <action>:maincpu.mw@253260=0x00D0</action>
+	  <action>:maincpu.mw@25326E=0x00D0</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+	  <action>:maincpu.mw@253260=0050</action>
+      <action>:maincpu.mw@25326E=0078</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Bees Grant Hyper Meter Even During Hyper Mode">
+ 	<!-- Code Change
+	  Replaces:
+	    27FBA2: tst.w  $81b63e.l
+	    27FBA8: bne  $27fbee	
+		  
+	  With:
+	    27FBA2: nop
+	    27FBA4: nop
+	    27FBA6: nop
+	    27FBA8: nop
+	    27FBAA: nop
+	-->
+    <script state="run">
+      <action>:maincpu.mw@27FBA2=0x4E71</action>
+	  <action>:maincpu.mw@27FBA4=0x4E71</action>
+	  <action>:maincpu.mw@27FBA6=0x4E71</action>
+	  <action>:maincpu.mw@27FBA8=0x4E71</action>
+	  <action>:maincpu.mw@27FBAA=0x4E71</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+	  <action>:maincpu.mw@27FBA2=4A79</action>
+	  <action>:maincpu.mw@27FBA4=0081</action>
+	  <action>:maincpu.mw@27FBA6=B63E</action>
+      <action>:maincpu.mw@27FBA8=6600</action>
+	  <action>:maincpu.mw@27FBAA=0044</action>
+    </script>
+  </cheat>
+   
+  <cheat desc="Lives +5 per Score Extend">
+  	<!-- Code Change
+	  Replaces:
+	    284350: addq.w #1, (A3)
+		  
+	  With:
+	    284350: addq.w #5, (A3)
+	-->
+    <script state="run">
+      <action>:maincpu.mw@0x284350=0x5A53</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+	  <action>:maincpu.mw@0x284350=0x5253</action>
+    </script>
+  </cheat>
+   
+  <cheat desc="Stage 4 Extend Gives 5 Lives">
+  	<!-- Code Change
+	  Replaces:
+	    253118: addq.w #1, $8130be.l
+		  
+	  With:
+	    253118: addq.w #5, $8130be.l	
+	-->
+    <script state="run">
+      <action>:maincpu.mw@0x253118=0x5A79</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+      <action>:maincpu.mw@0x253118=0x5279</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Fill Hyper Meter on Death">
+    <!-- Code Change
+	  Replaces:
+	    287B9A:  addi.w  #$258, $81b64a.l
+		
+	  With:
+	    287B9A:  addi.w  #$95f, $81b64a.l
+	 -->
+    <script state="run">
+	  <action>maincpu.mw@287B9C=095F</action> 
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+      <action>maincpu.mw@287B9C=0258</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Change Blue Bullets to Green">
+    <!-- Palette change
+      Also changes jet fuel colour at back of player ship
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@2243F8=0xFFFF</action>
+	  <action>:maincpu.mw@2243FA=0xDBF6</action>
+	  <action>:maincpu.mw@2243FC=0xBFEF</action>
+	  <action>:maincpu.mw@2243FE=0xA7E9</action>
+	  <action>:maincpu.mw@224400=0x9BE6</action>
+	  <action>:maincpu.mw@224402=0x83E0</action>
+	  <action>:maincpu.mw@224404=0x8343</action>
+	  <action>:maincpu.mw@224406=0x8343</action>
+	  <action>:maincpu.mw@224408=0x8264</action>
+	  <action>:maincpu.mw@22440A=0x81E5</action>
+	  <action>:maincpu.mw@22440C=0x8144</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Change Pink Bullets to Red">
+    <!-- Palette change
+      Also changes jet fuel colour at back of player ship
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@22440E=0xFDEF</action>
+	  <action>:maincpu.mw@224410=0xFD6B</action>
+	  <action>:maincpu.mw@224412=0xFCE7</action>
+	  <action>:maincpu.mw@224414=0xFCA5</action>
+	  <action>:maincpu.mw@224416=0xFC42</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Lasering Large Enemies Builds Extra Hyper Meter">
+  	<!-- Code Change
+	  Replaces:
+	    28677E: addi.w  #$18, D2
+		  
+	  With:
+	    28677E: addi.w  #$50, D2
+	-->
+    <script state="run">
+	  <action>maincpu.mw@286780=0050</action>
+    </script>
+	
+    <script state="off">
+	  <action>maincpu.mw@286780=0018</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Lasering Bosses Builds Extra Hyper Meter">
+	<!-- Code Change
+	  Replaces:
+	    2867BC: moveq   #$4, D2		   ; While not in hyper mode
+	    2867C6: moveq   #$30, D2       ; During hyper
+		  
+	  With:
+	    2867BC: moveq   #$40, D2	   ; While not in hyper mode
+	    2867C6: moveq   #$60, D2       ; During hyper
+		
+	  Using laser and aura against bosses gains extra hyper meter, this includes the stage 4 boss gears
+	-->
+    <script state="run">
+	  <action>maincpu.mw@2867BC=7440</action>
+      <action>maincpu.mw@2867C6=7460</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+	  <action>maincpu.mw@2867BC=7404</action>
+      <action>maincpu.mw@2867C6=7430</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----(Hyper Mode) Gain More Hyper Meter From Enemies">
+	<!-- Code Change
+	  Replaces:
+	    28669E: adda.w  D0, A0
+		2866A0: move.w  (A0), D0
+		  
+	  With:
+	    28669E: addi.w  #$02, D0 
+		
+	  Build more hyper meter when attacking enemies during hyper mode
+	  Overpowered, especially when using a lvl 5 hyper
+	-->
+    <script state="run">
+      <action>maincpu.mw@28669E=0640</action>
+	  <action>maincpu.mw@2866A0=0002</action>
+    </script>
+	
+    <script state="off">
+      <action>maincpu.mw@28669E=D0C0</action>
+	  <action>maincpu.mw@2866A0=3010</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Max Hyper Rank When Using Hyper">
+    <!-- Code Change
+	  Replaces:
+	    285A70: bls  $285a7a		
+		
+	  With:
+	    285A70: nop
+		
+	  Hyper rank will be maxed out on any hyper activation
+	 -->
+    <script state="run">
+      <action>maincpu.mw@285A70=4E71</action>  
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+      <action>maincpu.mw@285A70=6308</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Hyper Medals Fall Faster and Rise slower">
+    <!-- Code Change
+	  Replaces:
+	    27F0A2: subi.w  #$40, ($2,A6)	; Medal falling
+		27F0BA: addi.w  #$18, ($2,A6)	; Medal rising
+		
+	  With:
+	    27F0A2: subi.w  #$80, ($2,A6)   ; Medal falling
+		27F0BA: addi.w  #$1, ($2,A6)    ; Medal rising
+		
+	  Makes hyper medals easier to be grabbed
+	  Not recommended, just use the "Aquire Hyper Medals Instantly" code
+	 -->
+    <script state="run">
+	  <action>maincpu.mw@27F0A4=0080</action> 
+	  <action>maincpu.mw@27F0BC=0001</action> 
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instuctions -->
+      <action>maincpu.mw@27F0A4=0040</action>
+	  <action>maincpu.mw@27F0BC=0018</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Every hyper activation is level 5">
+  	<!-- Code Change
+	  Replaces:
+	    285A56: move.w  $81b65c.l, D0	
+		  
+	  With:
+	    285A56: move.b  #$5, D0
+	    285A5A: nop
+	-->
+    <script state="run">
+      <action>:maincpu.mw@285A56=0x103C</action>
+	  <action>:maincpu.mw@285A58=0x0005</action>
+	  <action>:maincpu.mw@285A5A=0x4E71</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instructions-->
+      <action>:maincpu.mw@285A56=0x3039</action>
+	  <action>:maincpu.mw@285A58=0x0081</action>
+	  <action>:maincpu.mw@285A5A=0xB65C</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="----Remove Hyper Activation Slowdown">
+  	<!-- Code Change
+	  Replaces:
+	    2498C4:  move.w  #$14, $80392E
+		  
+	  With:
+	   2498C4:  move.w  #$0, $80392E
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@2498C6=0x0000</action>
+    </script>
+	
+    <script state="off">
+	 <!-- Restore original instructions-->
+	  <action>:maincpu.mw@2498C6=0x0014</action>
+    </script>
+  </cheat>
+  
+</mamecheat>
