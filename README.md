@@ -9,7 +9,7 @@ There are a few black label romsets in existence, these codes are made for:
 
 All codes apply to player 1 only.
 
-## Codes
+## Recommended Codes
 ### Loop 2 Chain Timer for Loop 1
 Make chaining the same as loop 2 even during loop 1.
 
@@ -21,3 +21,55 @@ When the player fills the hyper meter, they will gain the hyper medal instantly 
 
 ### Keep Combo Gauge High While Lasering Large Enemy
 Makes it so that the combo gauge is held at a higher value than usual when lasering a large enemy, making it easier to maintain chains. This includes lasering the giant doors in stage 4.
+
+### Shot and Laser Power Level Max
+Player no longer needs to pick up power up items and no longer loses power ups on death.
+
+### Increase Combo Gauge Increment Value
+Enemies that cannot be multi-hit would be hard to combo from. This makes it easier.
+Also forces the increment value to be the same regardless of ship type.
+
+### Longer Hyper I-frames
+Increases the invincibility frames the player gets upon activating hyper. 
+
+### Bees Grant Hyper Meter Even During Hyper Mode
+Usually bees would only grant hyper meter when not in hyper mode. This allows hyper meter to be gained either way.
+
+### Lives +5 per Score Extend
+When achieving a score extend, gain 5 lives instead of 1.
+
+### Stage 4 Extend Gives 5 Lives
+Gain 5 lives instead of 1 when grabbing the 1-up from the stage 4 mid-boss.
+
+### Fill Hyper Meter on Death
+Hyper meter guaranteed to be filled on death.
+
+### Change Blue Bullets to Green
+Cosmetic.
+
+### Change Pink Bullets to Red
+Cosmetic.
+
+## Not Recommended Codes
+### Lasering Large Enemies Builds Extra Hyper Meter
+Overpowered. Values could be changed to make it more balanced.
+
+### Lasering Bosses Builds Extra Hyper Meter
+Overpowered. Values could be changed to make it more balanced.
+
+### (Hyper Mode) Gain More Hyper Meter From Enemies
+Build more hyper meter when attacking enemies during hyper mode.
+Overpowered, especially when using a lvl 5 hyper.
+
+### Max Hyper Rank When Using Hyper
+Hyper rank will be maxed out on any hyper activation.
+
+### Hyper Medals Fall Faster and Rise Slower
+Basically makes hyper medals easier to be grabbed.
+Not recommended, just use the "Aquire Hyper Medals Instantly" code.
+
+### Every Hyper Activation is Level 5
+Level 5 hyper activation regardless of the number of hypers in stock.
+
+### Remove Hyper Activation Slowdown
+The game has intentional slowdown for about 20 frames. This code removes that. Makes hyper activation feel smoother but it will throw off your muscle memory timings for each stage.
