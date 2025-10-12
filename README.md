@@ -47,8 +47,12 @@ Hyper meter guaranteed to be filled on death.
 ### Change Blue Bullets to Green
 Cosmetic.
 
+Must be activated before selecting ship.
+
 ### Change Pink Bullets to Red
 Cosmetic.
+
+Must be activated before selecting ship.
 
 ## Not Recommended Codes
 ### Lasering Large Enemies Builds Extra Hyper Meter
