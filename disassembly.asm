@@ -5,7 +5,6 @@
 ;  -- Colour Palettes --
 ;
 ; Bullet colour palette for blue bullets and pink bullets
-; Applies to gameplay, not boot up screen
 ;
 ;            ____________________________________________________________________________________________ Blue & pink bullet palette
 ;           |      ______________________________________________________________________________________ Blue bullet palette
@@ -459,3 +458,4 @@ p1_hyper_meter_reserves_count  = $81B6e0               ; Tracks how many hyper m
 287BAC: 33FC 095E 0081 B64A      move.w     #$95e, (p1_hyper_meter).l			            ; If hyper meter full after death deduct 1 from it
 
 287BB4: 4E75                     rts
+
