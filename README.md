@@ -1,4 +1,4 @@
-# Dodonpachi-Daioujou-QoL-Codes-and-Documentation
+# Dodonpachi-Daioujou-Red-Label
 Quality of life and cosmetic codes for Daioujou Black Label, as well as an in-progress disassembly
 
 Codename: Red Label
@@ -10,6 +10,10 @@ There are a few black label romsets in existence, these codes are made for:
 "Black label, newer" is the version of the game where the UI will shake when a boss explodes. The codes and disssembly probably won't apply to any other version of the game. The .xml file is for MAME and the .ini file is for FBNeo. FBNeo is recommended for better audio emulation.
 
 All codes apply to player 1 only.
+
+For Mame: Place ddpdojblk.xml in the 'cheat' folder in Mame's directory
+
+For FBNeo: Place ddpdojblk.ini in support > cheats in FBNeo's directory
 
 ## Recommended Codes
 ### Loop 2 Chain Timer for Loop 1
@@ -46,14 +50,23 @@ Gain 5 lives instead of 1 when grabbing the 1-up from the stage 4 mid-boss.
 ### Fill Hyper Meter on Death
 Hyper meter guaranteed to be filled on death.
 
-### Change Blue Bullets to Green
-Cosmetic.
+### Exy Type B has Type A Movement Speed
+Faster Type B.
 
+## Cosmetic
+
+### Change Blue Bullets to Green
 Must be activated before selecting ship.
 
 ### Change Pink Bullets to Red
-Cosmetic.
+Must be activated before selecting ship.
 
+### Red Hyper Colours
+Shots and laser in hyper mdoe will be red.
+
+Must be activate before selecting ship.
+
+### Type B Purple Main Body and Laser Colour
 Must be activated before selecting ship.
 
 ## Not Recommended Codes
