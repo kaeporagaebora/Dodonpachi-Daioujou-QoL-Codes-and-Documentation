@@ -237,6 +237,7 @@
   <cheat desc="Change Blue Bullets to Green">
     <!-- Palette change
       Also changes jet fuel colour at back of player ship
+	  Must be activated before selecting ship
 	-->
     <script state="run">
 	  <action>:maincpu.mw@2243F8=0xFFFF</action>
@@ -255,15 +256,219 @@
   
   <cheat desc="Change Pink Bullets to Red">
     <!-- Palette change
-      Also changes jet fuel colour at back of player ship
+	  Must be activated before selecting ship
 	-->
     <script state="run">
-	  <action>:maincpu.mw@22440E=0xFDEF</action>
-	  <action>:maincpu.mw@224410=0xFD6B</action>
-	  <action>:maincpu.mw@224412=0xFCE7</action>
-	  <action>:maincpu.mw@224414=0xFCA5</action>
-	  <action>:maincpu.mw@224416=0xFC42</action>
+	  <action>:maincpu.mw@22440E=0xFF18</action>
+	  <action>:maincpu.mw@224410=0xFE52</action>
+	  <action>:maincpu.mw@224412=0xFD8C</action>
+	  <action>:maincpu.mw@224414=0xFCC6</action>
+	  <action>:maincpu.mw@224416=0xFC00</action>
     </script>
+  </cheat>
+  
+  <cheat desc="Red Hyper Colours">
+    <!-- Palette change
+      Activate before selecting ship
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@2229F8=0xFA52</action>
+	  <action>:maincpu.mw@2229FA=0xFA52</action>
+	  <action>:maincpu.mw@2229FC=0xEDEF</action>
+	  <action>:maincpu.mw@2229FE=0xED8C</action>
+	  <action>:maincpu.mw@222A00=0xED4A</action>
+	  <action>:maincpu.mw@222A02=0xE129</action>
+	  <action>:maincpu.mw@222A04=0xE0C6</action>
+	  <action>:maincpu.mw@222A06=0xE0A5</action>
+	  <action>:maincpu.mw@222A08=0xE042</action>
+	  <action>:maincpu.mw@222A0A=0xE000</action>
+	  <action>:maincpu.mw@222A0C=0xE086</action>
+	  <action>:maincpu.mw@222A0E=0xC004</action>
+	  <action>:maincpu.mw@222A10=0xB003</action>
+	  <action>:maincpu.mw@222A12=0xB003</action>
+	  <action>:maincpu.mw@222A14=0xB003</action>
+	  
+	  <action>:maincpu.mw@222A38=0xFA52</action>
+	  <action>:maincpu.mw@222A3A=0xFA52</action>
+	  <action>:maincpu.mw@222A3C=0xEDEF</action>
+	  <action>:maincpu.mw@222A3E=0xED8C</action>
+	  <action>:maincpu.mw@222A40=0xED4A</action>
+	  <action>:maincpu.mw@222A42=0xE129</action>
+	  <action>:maincpu.mw@222A44=0xE0C6</action>
+	  <action>:maincpu.mw@222A46=0xE0A5</action>
+	  <action>:maincpu.mw@222A48=0xE042</action>
+	  <action>:maincpu.mw@222A4A=0xE000</action>
+	  <action>:maincpu.mw@222A4C=0xE086</action>
+	  <action>:maincpu.mw@222A4E=0xC004</action>
+	  <action>:maincpu.mw@222A50=0xB003</action>
+	  <action>:maincpu.mw@222A52=0xB003</action>
+	  <action>:maincpu.mw@222A54=0xB003</action>
+    </script>
+	
+    <script state="off">
+	  <action>:maincpu.mw@2229F8=0xFFFE</action>
+	  <action>:maincpu.mw@2229FA=0xFFF9</action>
+	  <action>:maincpu.mw@2229FC=0xFFF6</action>
+	  <action>:maincpu.mw@2229FE=0xFFF3</action>
+	  <action>:maincpu.mw@222A00=0xFFF1</action>
+	  <action>:maincpu.mw@222A02=0xFFAE</action>
+	  <action>:maincpu.mw@222A04=0xFFAF</action>
+	  <action>:maincpu.mw@222A06=0xFF8E</action>
+	  <action>:maincpu.mw@222A08=0xFF8E</action>
+	  <action>:maincpu.mw@222A0A=0xFF12</action>
+	  <action>:maincpu.mw@222A0C=0xFE92</action>
+	  <action>:maincpu.mw@222A0E=0xF236</action>
+	  <action>:maincpu.mw@222A10=0xE5F8</action>
+	  <action>:maincpu.mw@222A12=0xE5F8</action>
+	  <action>:maincpu.mw@222A14=0xE5F8</action>
+	  
+	  <action>:maincpu.mw@222A38=0xFFFE</action>
+	  <action>:maincpu.mw@222A3A=0xFFF9</action>
+	  <action>:maincpu.mw@222A3C=0xFFF6</action>
+	  <action>:maincpu.mw@222A3E=0xFFF3</action>
+	  <action>:maincpu.mw@222A40=0xFFF1</action>
+	  <action>:maincpu.mw@222A42=0xFFAE</action>
+	  <action>:maincpu.mw@222A44=0xFFAF</action>
+	  <action>:maincpu.mw@222A46=0xFF8E</action>
+	  <action>:maincpu.mw@222A48=0xFF8E</action>
+	  <action>:maincpu.mw@222A4A=0xFF12</action>
+	  <action>:maincpu.mw@222A4C=0xFE92</action>
+	  <action>:maincpu.mw@222A4E=0xF236</action>
+	  <action>:maincpu.mw@222A50=0xE5F8</action>
+	  <action>:maincpu.mw@222A52=0xE5F8</action>
+	  <action>:maincpu.mw@222A54=0xE5F8</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Type B Purple Main Body and Laser Colour">
+    <!-- Palette change
+	  Must be activated before selecting ship
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@2228DA=0xE29E</action>
+	  <action>:maincpu.mw@2228DC=0xCE38</action>
+	  <action>:maincpu.mw@2228DE=0xC5D6</action>
+	  <action>:maincpu.mw@2228E0=0xC1B4</action>
+	  <action>:maincpu.mw@2228E2=0xB993</action>
+	  <action>:maincpu.mw@2228E4=0xB572</action>
+	  <action>:maincpu.mw@2228E6=0xB131</action>
+	  <action>:maincpu.mw@2228E8=0xAD10</action>
+	  <action>:maincpu.mw@2228EA=0xA4EE</action>
+	  <action>:maincpu.mw@2228EC=0xA0CD</action>
+	  <action>:maincpu.mw@2228EE=0xA0CD</action>
+	  <action>:maincpu.mw@2228F0=0x9CAC</action>
+	  <action>:maincpu.mw@2228F2=0x986B</action>
+	  <action>:maincpu.mw@2228F4=0x9449</action>
+	  
+	  <action>:maincpu.mw@2229B8=0xE29E</action>
+	  <action>:maincpu.mw@2229BA=0xCE38</action>
+	  <action>:maincpu.mw@2229BC=0xC5D6</action>
+	  <action>:maincpu.mw@2229BE=0xC1B4</action>
+	  <action>:maincpu.mw@2229C0=0xB993</action>
+	  <action>:maincpu.mw@2229C2=0xB572</action>
+	  <action>:maincpu.mw@2229C4=0xB131</action>
+	  <action>:maincpu.mw@2229C6=0xAD10</action>
+	  <action>:maincpu.mw@2229C8=0xA4EE</action>
+	  <action>:maincpu.mw@2229CA=0xA0CD</action>
+	  <action>:maincpu.mw@2229CC=0xA0CD</action>
+	  <action>:maincpu.mw@2229CE=0x9CAC</action>
+	  <action>:maincpu.mw@2229D0=0x986B</action>
+	  <action>:maincpu.mw@2229D2=0x9449</action>
+	  <action>:maincpu.mw@2229D4=0x9028</action>
+    </script>
+	
+    <script state="off">
+	  <action>:maincpu.mw@2228DA=0xE3FD</action>
+	  <action>:maincpu.mw@2228DC=0xCFF9</action>
+	  <action>:maincpu.mw@2228DE=0xB7F5</action>
+	  <action>:maincpu.mw@2228E0=0xB3D4</action>
+	  <action>:maincpu.mw@2228E2=0xAF92</action>
+	  <action>:maincpu.mw@2228E4=0xA750</action>
+	  <action>:maincpu.mw@2228E6=0x9EEF</action>
+	  <action>:maincpu.mw@2228E8=0x9AAE</action>
+	  <action>:maincpu.mw@2228EA=0x966C</action>
+	  <action>:maincpu.mw@2228EC=0x964B</action>
+	  <action>:maincpu.mw@2228EE=0x960A</action>
+	  <action>:maincpu.mw@2228F0=0x95A9</action>
+	  <action>:maincpu.mw@2228F2=0x9166</action>
+	  <action>:maincpu.mw@2228F4=0x8D26</action>
+	  
+	  <action>:maincpu.mw@2229B8=0xFFFF</action>
+	  <action>:maincpu.mw@2229BA=0xE7FD</action>
+	  <action>:maincpu.mw@2229BC=0xCFFA</action>
+	  <action>:maincpu.mw@2229BE=0xAFF7</action>
+	  <action>:maincpu.mw@2229C0=0x97F4</action>
+	  <action>:maincpu.mw@2229C2=0x97D1</action>
+	  <action>:maincpu.mw@2229C4=0x938F</action>
+	  <action>:maincpu.mw@2229C6=0x8F4D</action>
+	  <action>:maincpu.mw@2229C8=0x8EEB</action>
+	  <action>:maincpu.mw@2229CA=0x8EA9</action>
+	  <action>:maincpu.mw@2229CC=0x8A48</action>
+	  <action>:maincpu.mw@2229CE=0x85E6</action>
+	  <action>:maincpu.mw@2229D0=0x85C5</action>
+	  <action>:maincpu.mw@2229D2=0x8183</action>
+	  <action>:maincpu.mw@2229D4=0x8162</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="Exy Type B Has Type A Movement Speed">
+    <script state="run">
+	 <!-- Horizontal Movement -->
+	  <action>:maincpu.mw@2035BC=0x0000</action>
+	  <action>:maincpu.mw@2035BE=0x0A3A</action>
+	  
+	 <!-- Horizontal Movement while Lasering -->
+	  <action>:maincpu.mw@202D9C=0x0000</action>
+	  <action>:maincpu.mw@202D9E=0x0770</action>
+	  
+	 <!-- Vertical Movement -->
+	  <action>:maincpu.mw@2033B8=0x0000</action>
+	  <action>:maincpu.mw@2033bA=0x0F62</action>
+	  
+	 <!-- Vertical Movement while Lasering -->
+	  <action>:maincpu.mw@202B98=0x0000</action>
+	  <action>:maincpu.mw@202B9A=0x0B30</action>
+	  
+	 <!-- Diagonal Movement -->
+	  <action>:maincpu.mw@2034B8=0x0000</action>
+	  <action>:maincpu.mw@2034BA=0x0ABE</action>
+	  <action>:maincpu.mw@2034BC=0x0000</action>
+	  <action>:maincpu.mw@2034BE=0x0738</action>
+	  
+	 <!-- Diagonal Movement while Lasering -->
+	  <action>:maincpu.mw@202C98=0x0000</action>
+	  <action>:maincpu.mw@202C9A=0x07D0</action>
+	  <action>:maincpu.mw@202C9C=0x0000</action>
+	  <action>:maincpu.mw@202C9E=0x0540</action>
+    </script>
+
+    <script state="off">
+	  <action>:maincpu.mw@2035BC=0x0000</action>
+	  <action>:maincpu.mw@2035BE=0x08D5</action>
+	  
+	  <action>:maincpu.mw@2029DC=0x0000</action>
+	  <action>:maincpu.mw@2029DE=0x016C</action>
+	  
+	 <!-- Vertical Movement -->
+	  <action>:maincpu.mw@2033B8=0x0000</action>
+	  <action>:maincpu.mw@2033bA=0x0D49</action>
+	  
+	 <!-- Vertical Movement while Lasering -->
+	  <action>:maincpu.mw@202B98=0x0000</action>
+	  <action>:maincpu.mw@202B9A=0x0A7D</action>
+	  
+	 <!-- Diagonal Movement -->
+	  <action>:maincpu.mw@2034B8=0x0000</action>
+	  <action>:maincpu.mw@2034BA=0x0947</action>
+	  <action>:maincpu.mw@2034BC=0x0000</action>
+	  <action>:maincpu.mw@2034BE=0x063C</action>
+	  
+	 <!-- Diagonal Movement while Lasering -->
+	  <action>:maincpu.mw@202C98=0x0000</action>
+	  <action>:maincpu.mw@202C9A=0x0753</action>
+	  <action>:maincpu.mw@202C9C=0x0000</action>
+	  <action>:maincpu.mw@202C9E=0x04EC</action>
+    </script>	
   </cheat>
   
   <cheat desc="----Lasering Large Enemies Builds Extra Hyper Meter">
@@ -411,7 +616,7 @@
     </script>
 	
     <script state="off">
-	 <!-- Restore original instructions-->
+	 <!-- Restore original instructions -->
 	  <action>:maincpu.mw@2498C6=0x0014</action>
     </script>
   </cheat>
