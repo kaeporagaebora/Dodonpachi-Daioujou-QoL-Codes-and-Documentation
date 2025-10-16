@@ -411,6 +411,81 @@
     </script>
   </cheat>
   
+  <cheat desc="Red After Images and Hit Detection">
+    <!-- Palette change
+	  Must be activated before selecting ship
+	-->
+    <script state="run">
+	  <action>:maincpu.mw@225278=0xFB18</action>
+	  <action>:maincpu.mw@22527A=0xFAB5</action>
+      <action>:maincpu.mw@22527C=0xFA94</action>
+	  <action>:maincpu.mw@22527E=0xFA73</action>
+	  <action>:maincpu.mw@225280=0xFA52</action>
+      <action>:maincpu.mw@225282=0xFA10</action>
+	  <action>:maincpu.mw@225284=0xF1CE</action>
+	  <action>:maincpu.mw@225286=0xF1AD</action>
+      <action>:maincpu.mw@225288=0xF18C</action>
+	  <action>:maincpu.mw@22528A=0xF14A</action>
+	  <action>:maincpu.mw@22528C=0xF129</action>
+      <action>:maincpu.mw@22528E=0xF108</action>
+	  <action>:maincpu.mw@225290=0xF0E7</action>
+	  <action>:maincpu.mw@225292=0xF0A5</action>
+      <action>:maincpu.mw@225294=0xF084</action>
+	  <action>:maincpu.mw@225296=0xF062</action>
+	
+	  <action>:maincpu.mw@225298=0xF421</action>
+	  <action>:maincpu.mw@22529A=0xF042</action>
+	  <action>:maincpu.mw@22529C=0xF063</action>
+	  <action>:maincpu.mw@22529E=0xEC84</action>
+	  <action>:maincpu.mw@2252A0=0xECA5</action>
+	  <action>:maincpu.mw@2252A2=0xE8A5</action>
+	  <action>:maincpu.mw@2252A4=0xE0A5</action>
+	  <action>:maincpu.mw@2252A6=0xDCA5</action>
+	  <action>:maincpu.mw@2252A8=0xD8A5</action>
+	  <action>:maincpu.mw@2252AA=0xD4A5</action>
+	  <action>:maincpu.mw@2252AC=0xCCA5</action>
+	  <action>:maincpu.mw@2252AE=0xC8A5</action>
+	  <action>:maincpu.mw@2252B0=0xC4A5</action>
+	  <action>:maincpu.mw@2252B2=0xC0A5</action>
+	  <action>:maincpu.mw@2252B4=0xB8A5</action>
+    </script>
+	
+    <script state="off">
+	  <action>:maincpu.mw@225278=0xDF9C</action>
+	  <action>:maincpu.mw@22527A=0xDB9C</action>
+      <action>:maincpu.mw@22527C=0xD79C</action>
+	  <action>:maincpu.mw@22527E=0xCB3C</action>
+	  <action>:maincpu.mw@225280=0xC71C</action>
+      <action>:maincpu.mw@225282=0xC2FC</action>
+	  <action>:maincpu.mw@225284=0xBEBC</action>
+	  <action>:maincpu.mw@225286=0xBA7C</action>
+      <action>:maincpu.mw@225288=0xB25C</action>
+	  <action>:maincpu.mw@22528A=0xAE1C</action>
+	  <action>:maincpu.mw@22528C=0xA9FC</action>
+      <action>:maincpu.mw@22528E=0xA5BC</action>
+	  <action>:maincpu.mw@225290=0x9D5C</action>
+	  <action>:maincpu.mw@225292=0x951C</action>
+      <action>:maincpu.mw@225294=0x90DC</action>
+	  <action>:maincpu.mw@225296=0x887C</action>
+	
+	  <action>:maincpu.mw@225298=0x843D</action>
+	  <action>:maincpu.mw@22529A=0x885C</action>
+	  <action>:maincpu.mw@22529C=0x8C7C</action>
+	  <action>:maincpu.mw@22529E=0x909B</action>
+	  <action>:maincpu.mw@2252A0=0x94BB</action>
+	  <action>:maincpu.mw@2252A2=0x94BA</action>
+	  <action>:maincpu.mw@2252A4=0x94B8</action>
+	  <action>:maincpu.mw@2252A6=0x94B7</action>
+	  <action>:maincpu.mw@2252A8=0x94B6</action>
+	  <action>:maincpu.mw@2252AA=0x94B5</action>
+	  <action>:maincpu.mw@2252AC=0x94B3</action>
+	  <action>:maincpu.mw@2252AE=0x94B2</action>
+	  <action>:maincpu.mw@2252B0=0x94B1</action>
+	  <action>:maincpu.mw@2252B2=0x94B0</action>
+	  <action>:maincpu.mw@2252B4=0x94AE</action>
+    </script>
+  </cheat>
+  
   <cheat desc="Exy Type B Has Type A Movement Speed">
     <script state="run">
 	 <!-- Horizontal Movement -->
