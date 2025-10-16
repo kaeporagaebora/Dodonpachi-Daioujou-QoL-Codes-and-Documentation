@@ -62,9 +62,9 @@ Must be activated before selecting ship.
 Must be activated before selecting ship.
 
 ### Red Hyper Colours
-Shots and laser in hyper mdoe will be red.
+Shots and laser in hyper mode will be red.
 
-Must be activate before selecting ship.
+Must be activated before selecting ship.
 
 ### Type B Purple Main Body and Laser Colour
 Must be activated before selecting ship.
