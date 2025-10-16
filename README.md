@@ -56,13 +56,22 @@ Faster Type B.
 ## Cosmetic
 
 ### Change Blue Bullets to Green
+Changes the colour of the blue bullets that the enemies fire.
+
 Must be activated before selecting ship.
 
 ### Change Pink Bullets to Red
+Changes the colour of the pink bullets that the enemies fire.
+
 Must be activated before selecting ship.
 
 ### Red Hyper Colours
 Shots and laser in hyper mode will be red.
+
+Must be activated before selecting ship.
+
+### Red After Images and Hit Detection
+Changes the colour of the blue after image trails of the player that appear when you move while lasering. Also changes the colour of the blue glow on enemies when they are hit.
 
 Must be activated before selecting ship.
 
