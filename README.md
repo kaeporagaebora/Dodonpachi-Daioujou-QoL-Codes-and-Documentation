@@ -15,6 +15,8 @@ For Mame: Place ddpdojblk.xml in the 'cheat' folder in Mame's directory
 
 For FBNeo: Place ddpdojblk.ini in support > cheats in FBNeo's directory
 
+For Retroarch with FBNeo core: In the Retroarch system folder, create a 'fbneo' folder and in there create a folder called 'cheats'. Then when running the game in Retroarch, go to 'core options' and then 'cheat'.
+
 ## Recommended Codes
 ### Loop 2 Chain Timer for Loop 1
 Make chaining the same as loop 2 even during loop 1.
