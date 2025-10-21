@@ -1,7 +1,10 @@
- ; -----------------------------------------------------------------------------------------------
- ; ddpdojblk (DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)) Disassembly
- ; ------------------------------------------------------------------------------------------------
-
+;------------------------------------------------------------------------------------------------
+; ddpdojblk (DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)) Disassembly
+;-------------------------------------------------------------------------------------------------
+;
+; In-progress disassembly
+;
+;
 ;  -- Colour Palettes --
 ;
 ; Bullet colour palette for blue bullets and pink bullets
@@ -31,7 +34,7 @@
 
 
 ; -- Memory Values --
-; 2 byte values per address
+; Most addresses assume 2 byte values per address
 hyper_slowdown_timer           = $80392e               ; Game slowdown timer when activating hyper
 bullet_slowdown_value          = $803932               ; Game slowdown timer during certain bullet patterns
 p1_position                    = $8103e8               ; $8103e8 = Y position, $8103ea = X position, often referenced together as a 4 byte value
@@ -458,4 +461,5 @@ p1_hyper_meter_reserves_count  = $81B6e0               ; Tracks how many hyper m
 287BAC: 33FC 095E 0081 B64A      move.w     #$95e, (p1_hyper_meter).l			            ; If hyper meter full after death deduct 1 from it
 
 287BB4: 4E75                     rts
+
 
