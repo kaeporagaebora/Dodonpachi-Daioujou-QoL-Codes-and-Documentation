@@ -2,10 +2,136 @@
 ; ddpdojblk (DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)) Disassembly
 ;-------------------------------------------------------------------------------------------------
 ;
-; In-progress disassembly
-;
+; An in-progress disassembly
 ;
 ;  -- Colour Palettes --
+;
+; P1 Type A green section palette
+;
+;
+;            ___________________________ P1 Type A green section palette
+;           |      _____________________ P1 Type A green section palette
+;           |     |      _______________ P1 Type A green section palette
+;           |     |     |      _________ P1 Type A green section palette
+;           |     |     |     |      ___ P1 Type A green section palette
+;           |     |     |     |     |
+222878:   83E0  8343  8264  81E5  8144
+;
+;
+; P1 Type A palettes for red main body
+;
+;            _________________________________________________________________________________ P1 Type A red main body palette
+;           |      ___________________________________________________________________________ P1 Type A red main body palette
+;           |     |      _____________________________________________________________________ P1 Type A red main body palette
+;           |     |     |      _______________________________________________________________ P1 Type A red main body palette
+;           |     |     |     |      _________________________________________________________ P1 Type A red main body palette
+;           |     |     |     |     |      ___________________________________________________ P1 Type A red main body palette
+;           |     |     |     |     |     |      _____________________________________________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |      _______________________________________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |      _________________________________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |      ___________________________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |     |      _____________________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |     |     |      _______________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |     |     |     |      _________ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |      ___ P1 Type A red main body palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |
+22289A:   F64F  F5EB  F5A9  F588  F546  F524  E904  E4E5  DCC5  D8C5  BC82  AC41  A020  9400  
+;
+;
+; P1 Type B orange section palettes
+;
+;            ___________________________ P1 Type B orange section palette
+;           |      _____________________ P1 Type B orange section palette
+;           |     |      _______________ P1 Type B orange section palette
+;           |     |     |      _________ P1 Type B orange section palette
+;           |     |     |     |      ___ P1 Type B orange section palette
+;           |     |     |     |     |
+2228B8:   FE91  FDEC  FD27  DCE5  BCA3
+;
+;
+; P1 Type B green main body palette
+;
+;           _________________________________________________________________________________ P1 Type B green main body palette
+;          |      ___________________________________________________________________________ P1 Type B green main body palette
+;          |     |      _____________________________________________________________________ P1 Type B green main body palette
+;          |     |     |      _______________________________________________________________ P1 Type B green main body palette
+;          |     |     |     |      _________________________________________________________ P1 Type B green main body palette
+;          |     |     |     |     |      ___________________________________________________ P1 Type B green main body palette
+;          |     |     |     |     |     |      _____________________________________________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |      _______________________________________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |      _________________________________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |      ___________________________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |     |      _____________________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |     |     |      _______________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |     |     |     |      _________ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |     |     |     |     |      ___ P1 Type B green main body palette
+;          |     |     |     |     |     |     |     |     |     |     |     |     |     |
+2228DA   E3FD  CFF9  B7F5  B3D4  AF92  A750  9EEF  9AAE  966C  964B  960A  95A9  9166  8D26
+;
+;
+; Type B laser Palettes
+;
+;            _______________________________________________________________________________________ Type B laser palette
+;           |      _________________________________________________________________________________ Type B laser palette
+;           |     |      ___________________________________________________________________________ Type B laser palette
+;           |     |     |      _____________________________________________________________________ Type B laser palette
+;           |     |     |     |      _______________________________________________________________ Type B laser palette
+;           |     |     |     |     |      _________________________________________________________ Type B laser palette
+;           |     |     |     |     |     |      ___________________________________________________ Type B laser palette
+;           |     |     |     |     |     |     |      _____________________________________________ Type B laser palette
+;           |     |     |     |     |     |     |     |      _______________________________________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |      _________________________________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |      ___________________________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |     |      _____________________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |     |     |      _______________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |      _________ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |      ___ Type B laser palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+2229B8:   FFFF  E7FD  CFFA  AFF7  97F4  97D1  938F  8F4D  8EEB  8EA9  8A48  85E6  85C5  8183  8162
+;
+;
+;
+; Type A hyper palettes
+;
+;            _______________________________________________________________________________________ Type A hyper palette
+;           |      _________________________________________________________________________________ Type A hyper palette
+;           |     |      ___________________________________________________________________________ Type A hyper palette
+;           |     |     |      _____________________________________________________________________ Type A hyper palette
+;           |     |     |     |      _______________________________________________________________ Type A hyper palette
+;           |     |     |     |     |      _________________________________________________________ Type A hyper palette
+;           |     |     |     |     |     |      ___________________________________________________ Type A hyper palette
+;           |     |     |     |     |     |     |      _____________________________________________ Type A hyper palette
+;           |     |     |     |     |     |     |     |      _______________________________________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |      _________________________________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |      ___________________________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |      _____________________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |      _______________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |      _________ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |      ___ Type A hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+2229F8:   FFFE  FFF9  FFF6  FFF3  FFF1  FFAE  FFAF  FF8E  FF8E  FF12  FE92  F236  E5F8  E5F8  E5F8 
+;
+;
+; Type B hyper palettes
+;
+;            _______________________________________________________________________________________ Type B hyper palette
+;           |      _________________________________________________________________________________ Type B hyper palette
+;           |     |      ___________________________________________________________________________ Type B hyper palette
+;           |     |     |      _____________________________________________________________________ Type B hyper palette
+;           |     |     |     |      _______________________________________________________________ Type B hyper palette
+;           |     |     |     |     |      _________________________________________________________ Type B hyper palette
+;           |     |     |     |     |     |      ___________________________________________________ Type B hyper palette
+;           |     |     |     |     |     |     |      _____________________________________________ Type B hyper palette
+;           |     |     |     |     |     |     |     |      _______________________________________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |      _________________________________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |      ___________________________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |      _____________________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |      _______________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |      _________ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |      ___ Type B hyper palette
+;           |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+222A38:   FFFE  FFF9  FFF6  FFF3  FFF1  FFAE  FFAF  FF8E  FF8E  FF12  FE92  F236  E5F8  E5F8  E5F8 
+;
 ;
 ; Bullet colour palette for blue bullets and pink bullets
 ;
@@ -459,7 +585,4 @@ p1_hyper_meter_reserves_count  = $81B6e0               ; Tracks how many hyper m
 287BA2: 0C79 095F 0081 B64A      cmp.w      #$95f, (p1_hyper_meter).l			  
 287BAA: 6508                     bcs        $287bb4	                                        ; If hyper meter is not full, skip next instruction
 287BAC: 33FC 095E 0081 B64A      move.w     #$95e, (p1_hyper_meter).l			            ; If hyper meter full after death deduct 1 from it
-
 287BB4: 4E75                     rts
-
-
