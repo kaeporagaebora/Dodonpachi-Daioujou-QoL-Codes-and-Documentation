@@ -3,6 +3,9 @@ Quality of life and cosmetic codes for Daioujou Black Label, as well as an in-pr
 
 Codename: Red Label
 
+Video Preview:
+https://youtu.be/oz5zC_WeBC4
+
 There are a few black label romsets in existence, these codes are made for:
 
 **ddpdojblk (DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer))**
